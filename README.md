@@ -2,6 +2,20 @@
 
 A professional, Manifest V3 Chrome Extension that extracts and summarizes webpage content using Google's Gemini AI. This project follows a secure proxy-based architecture to protect sensitive credentials while delivering a premium user experience.
 
+## 🚀 How to Download and Use
+
+Follow these steps to get the extension running on your local machine.
+
+### 1. Download the Extension
+
+You can download the project in two ways:
+
+- **Via Git**: Clone the repository to your local machine.
+  ```bash
+  git clone https://github.com/YOUR_USERNAME/hngChromeExtension.git
+  ```
+- **Via ZIP**: Click the **Code** button on the GitHub repository page and select **Download ZIP**, then extract it to a folder.
+
 ---
 
 ## 🛠️ Setup Instructions
@@ -13,45 +27,39 @@ A professional, Manifest V3 Chrome Extension that extracts and summarizes webpag
 - **Google Chrome Browser**
 - **Google Gemini API Key**: Obtain one for free at [Google AI Studio](https://aistudio.google.com/).
 
-### 1. Backend Server Setup
+### 2. Backend Server Setup
 
 The server acts as a secure bridge to the Gemini AI API, keeping your API keys safe from exposure in the extension frontend.
 
 1.  **Navigate to the server directory**:
-
-```bash
-cd server
-```
-
+    ```bash
+    cd server
+    ```
 2.  **Install dependencies**:
-
-```bash
-npm install
-```
-
+    ```bash
+    npm install
+    ```
 3.  **Configure Environment Variables**:
     Create a `.env` file in the `server` folder:
-
-```env
-GEMINI_API_KEY=your_actual_api_key_here
-PORT=3000
-```
-
+    ```env
+    GEMINI_API_KEY=your_actual_api_key_here
+    PORT=3000
+    ```
 4.  **Start the server**:
+    ```bash
+    npm start
+    ```
+    _The server will run on `http://localhost:3000`._
 
-```bash
-npm start
-```
+### 3. Chrome Extension Installation (Local Load)
 
-_The server will run on `http://localhost:3000`._
-
-### 2. Chrome Extension Installation
+Since this is a local extension, you must load it manually:
 
 1.  Open Chrome and navigate to `chrome://extensions/`.
 2.  Enable **Developer mode** using the toggle in the top right.
-3.  Click **Load unpacked**.
-4.  Select the `extension` folder from this project's root directory.
-5.  Pin the "AI Page Summarizer" to your toolbar for easy access.
+3.  Click the **Load unpacked** button.
+4.  Navigate to and select the `extension` folder inside the project directory you downloaded.
+5.  The extension is now installed! Pin the "AI Page Summarizer" to your toolbar for easy access.
 
 ---
 
