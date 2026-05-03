@@ -95,9 +95,9 @@ The project is split into four distinct layers to ensure separation of concerns 
 
 ## 🤖 AI Integration Explanation
 
-This project integrates **Google's Gemini 1.5 Flash** model to provide high-speed, intelligent summarization.
+This project integrates **Google's Gemini Flash Latest** model to provide high-speed, intelligent summarization.
 
-- **Model Choice**: We use `gemini-latest-flash` because of its extremely low latency and high context window, making it ideal for real-time webpage summarization.
+- **Model Choice**: We use `gemini-flash-latest` because of its extremely low latency and high context window, making it ideal for real-time webpage summarization.
 - **Prompt Engineering**: The server constructs a sophisticated prompt that instructs the AI to:
 
 1.  Provide a concise 3-5 sentence overview.
